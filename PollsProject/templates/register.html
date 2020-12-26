@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+{% block title %} User Registration {% endblock %}
+
+{% block main %}
+<div class="row">
+    <div class="col-lg-8 col-lg-offset-2">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Registration</h3>
+            </div>
+
+            <form method="POST">
+                {% csrf_token %}
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="form-group">
+                                 <label>First Name</label><br>
+                                <input type="text" placeholder="First Name" name="firstName">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                           <div class="form-group">
+                                 <label>Last Name</label><br>
+                                <input type="text" placeholder="Last Name" name="lastName">
+                            </div>
+                        </div>
+                    </div>
+
+                   <div class="row">
+                        <div class="col-lg-12">
+                            <div class="form-group">
+                                 <label>User Name</label><br>
+                                <input type="text" placeholder="User Name" name="userName">
+                            </div>
+                        </div>
+                    </div>
+
+                   <div class="row">
+                         <div class="col-lg-12">
+                            <div class="form-group">
+                                 <label>User Email</label><br>
+                                <input type="text" placeholder="Email" name="email">
+                            </div>
+                         </div>
+                   </div>
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="form-group">
+                                <label>Password</label><br>
+                                <input type="password" placeholder="Password" name="password">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="form-group">
+                                <label>Confirm Password</label><br>
+                                <input type="password" placeholder="Confirm Password" name="confirmPassword">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <hr />
+                        <div class="col-lg-4">
+                            <button type="submit" class="btn btn-info">Register</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
