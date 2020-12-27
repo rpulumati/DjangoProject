@@ -75,21 +75,13 @@ WSGI_APPLICATION = 'PollsProject.wsgi.application'
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
 DATABASES = {
-    # 'default': {
-        # 'ENGINE': 'django.db.backends.postgresql',
-        # 'NAME': 'PGTDemo',
-        # 'USER': 'postgres',
-        # 'PASSWORD': '1234',
-        # 'SERVER': 'localhost'
-    # }  
-
-    'default': {
+   'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'AWSrds',
-        'USER': 'master',
-        'PASSWORD': 'master123',
-        'HOST': 'awsdbinstance.cop1no9alivl.us-east-2.rds.amazonaws.com',
-        'PORT': '5432'
+        'NAME': '',
+        'USER': '',
+        'PASSWORD': '',
+        'HOST': '',
+        'PORT': ''
     }    
 }
 
